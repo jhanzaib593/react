@@ -9,7 +9,7 @@ function App() {
         
         <div className="">
             <nav className="navbar navbar-expand-md navbar-light header-navbar">
-                <img className="header-img-2" id="logo" src="{pic}" alt="" width="90" height="90"/>
+                <div className="header-img-2" id="logo" alt=""></div>
                 
                 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
