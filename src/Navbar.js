@@ -1,61 +1,63 @@
+import React from 'react'
+import Proptypes from 'prop-types'
 
-function App() {
-  return (
-    <>
-   
-<header className="bg-black pt-2 fixed-top">	
-<div className="container">
-    <div className="row ">
-        
-        <div className="">
-            <nav className="navbar navbar-expand-md navbar-light header-navbar">
-                <div className="header-img-2" id="logo" alt=""></div>
-                
-                
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
+function Navbar(props) {
+    return (
+      <>
+     
+     <header className="header_wrapper">
+        <nav className={`navbar navbar-expand-lg fixed-top bg-${props.mode}`}>
+            <div className="container d-flex justify-content-end">
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul className="navbar-nav menu-navbar-nav ">
                         <li className="nav-item">
-                            <a className="nav-link active" href="index.html">Home</a>
+                            <a className="nav-link active" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} aria-current="page" href="#home">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#about">About</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#services">Services</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#services">Services</a>
                         </li>
-                        
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Courses
+                        <li className="nav-item">
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#portfolio">Portfolio</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="poem.html">Poems</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#videos">Videos</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="blogs.html">Blogs</a>
+                        </li>
+                        <li className="nav-item mt-3 mt-lg-0">
+                            <a  href="/">
+                                <button className="main-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#Contact">Contact</button>  
                             </a>
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="Data-Science-course.html">Data Science Course</a>
-                            <a className="dropdown-item" href="Python-course.html">Python Course</a>
+                        </li>
+                        <li className="pt-2">
+                            <div class="m-check form-switch">
+                                <input className="form-check-input f-c" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                                <label className="form-check-label p-1" htmFor="flexSwitchCheckDefault" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}>Light Mode</label>
                             </div>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active" href="#founder">Founder</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="blogs.html">Blogs</a>
-                        </li>
-                            <li className="nav-item">
-                            <a className="nav-link" href="#contact-section">Contact</a>
-                        </li>  
-                        </ul>
+
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </div>
-</div>
-</header>
-    </>
-    
-  );
-}
-
-export default App;
-
+            </div>
+        </nav>
+    </header>
+      </>
+      
+    );
+  }
+  
+  export default Navbar;
+  
+  
