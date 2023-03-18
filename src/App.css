@@ -213,3 +213,265 @@ box-shadow: none !important;
 .bg-dark-blue{
     background-color: transparent;
 }
+
+/* 3 Banner */
+.banner_wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-image: url('bg-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 330px 0 100px 0;
+
+}
+
+/* 4 About */
+.about_wrapper ul.nav-pills {
+    border: 1px solid var(--gray-color);
+    border-radius: 50px;
+}
+
+.about_wrapper ul li .nav-link {
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.45s cubic-bezier(0, 0, 0.2, 1);
+    display: inline-block;
+    color: var(--text-gray);
+    border: 0;
+    transition: 0.3s;
+}
+
+.about_wrapper ul li .nav-link.active {
+    background-color: var(--primary-color);
+}
+
+.about_wrapper .single-progress {
+    margin-top: 26px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about_wrapper .single-progress .progress {
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: var(--bg-white);
+    overflow: visible;
+}
+
+.about_wrapper .progress-bar {
+    background-color: var(--primary-color);
+    background-image: var(--gradient-color);
+}
+
+.about_wrapper .single-progress h6 {
+    text-align: left;
+}
+
+.about_wrapper .single-progress .label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+.about_wrapper .tab-pane li {
+    color: var(--gray-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.about_wrapper .tab-pane li a {
+    font-weight: 500;
+    display: block;
+    color: var(--text-gray);
+}
+.modal-btn{
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.modal-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+   
+}
+
+
+
+
+        /* responsive.style */
+
+@media (max-width:991px) {
+
+    /* custom css */
+    section {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* 2 Navbar */
+    .header-scrolled {
+        height: auto;
+    }
+
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        background-color: var(--bg-dark-blue);
+        padding-bottom: 15px;
+    }
+
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 15px;
+        
+    }
+
+    /* banner wrapper */
+    .banner_wrapper {
+        padding: 200px 0;
+    }
+
+    /* About */
+    .about_wrapper ul.nav-pills{
+        width:61%;
+        margin:auto;
+
+    }
+
+    /* portfolio */
+    .portfolio_wrapper .card {
+        min-height: 400px;
+    }
+    .poem-img{
+        position: absolute;
+        right: 0;
+    }
+    .carousel-control-prev i {
+        color: black;
+    } 
+    .carousel-control-next i {
+        color: black;
+    }   
+    
+}
+@media only screen and ( min-width:150px) and ( max-width:991px){
+
+	
+    .main-btn{
+        border: 2px solid white;
+        color: white;
+    }
+    .blog_wrapper .container h2{
+        padding-right: 0 !important;
+        line-height: 1em !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* custom css */
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    /* About */
+    .about_wrapper ul.nav-pills{
+        width:100%;
+        margin:auto;
+        border:0;
+    }
+    .about_wrapper ul li .nav-link {
+        font-size: 13px;
+    } 
+
+  
+    /* portfolio */
+    .portfolio_wrapper .card {
+        min-height: 500px;
+    }
+    .poem-cont{
+        position: unset;
+    }
+    .poem-img{
+        position:unset;
+    }
+    .poems-text {
+      padding: 5em 1em; 
+    }
+    .poem-contant {
+        padding: 0 !important;
+    }
+    .container{
+        padding-left: 0;
+    }
+    .carousel {
+        padding: 0 ;
+    }
+    .carousel-item img {
+        padding: 0px;
+        height: 21em;
+    }
+}
+
+@media only screen and ( min-width:150px) and ( max-width:575px){
+
+    header ,.about_wrapper, .services_wrapper, .portfolio_wrapper, 
+    .poem_wrapper, .y-video, .blog_section, .poem-card, .search, 
+    .blog_wrapper, .categories_wrapper, .post_wrapper, footer{
+        padding-left: 10px;
+    }
+    .banner_wrapper{
+        padding-left: 0px !important;
+    }
+    .poem_wrapper .p_view a{
+        width: 50% !important;
+    }
+    
+    
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 613px;
+    margin: 1.75rem auto;}
+}
+@media (min-width: 576px){
+    .modal-dialog1 {
+        max-width: 65em !important;
+        margin: 1.75rem auto !important;}
+    }
+        /* responsive.style */

@@ -1,11 +1,9 @@
-import React from 'react'
-import Proptypes from 'prop-types'
-
+import React from 'react';
 function Navbar(props) {
     return (
       <>
      
-     <header className="header_wrapper">
+     <header className="header_wrapper" style={{backgroundColor:props.mode==='light'?'gray':'#c6c9d8bf'}}>
         <nav className={`navbar navbar-expand-lg fixed-top bg-${props.mode}`}>
             <div className="container d-flex justify-content-end">
 
@@ -16,7 +14,7 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav menu-navbar-nav ">
                         <li className="nav-item">
-                            <a className="nav-link active" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} aria-current="page" href="#home">Home</a>
+                            <a className="nav-link active" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#about">About</a>
@@ -28,13 +26,13 @@ function Navbar(props) {
                             <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#portfolio">Portfolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="poem.html">Poems</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="poem.html">Poems</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#videos">Videos</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="#videos">Videos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="blogs.html">Blogs</a>
+                            <a className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href ="/Blogs">Blogs</a>
                         </li>
                         <li className="nav-item mt-3 mt-lg-0">
                             <a  href="/">
