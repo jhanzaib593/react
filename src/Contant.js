@@ -1,5 +1,22 @@
 import React from 'react'
 import about from '../src/about.jpg'
+import service1 from '../src/img/service-1.svg'
+import service2 from '../src/img/service-2.svg'
+import service3 from '../src/img/service-3.svg'
+import p1 from '../src/img/projects/p-1.png'
+import p2 from '../src/img/projects/p-2.png'
+import p3 from '../src/img/projects/p-3.png'
+import p4 from '../src/img/projects/p-4.png'
+import p6 from '../src/img/projects/p-6.png'
+import p7 from '../src/img/projects/p-7.png'
+import p9 from '../src/img/projects/p-9.png'
+import poem1 from '../src/img/poem/poem 1.png'
+import poem2 from '../src/img/poem/poem 2.png'
+
+
+
+
+
 
 
 function Contant (props) {
@@ -10,7 +27,7 @@ function Contant (props) {
             <div className="row">
                 <div className="col-sm-12 text-center text-md-start">
                     <h1>Faizan Khalid Mohsin<br/><span>Data Scientist.</span><br/>based in Toronto .</h1>
-                    
+
                 </div>
             </div>
         </div>
@@ -67,9 +84,9 @@ function Contant (props) {
                         </div>
                       </div>
                     </div>
-                   
 
-                   
+
+
                     <div className="pt-4">
                         <ul className="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab"
                             role="tablist">
@@ -201,7 +218,7 @@ function Contant (props) {
                                                     </div>
 
                                                   </div>
-                                               
+
                                             </div>
                                             <div className="modal-footer">
                                                 <button type="button" className="btn btn-secondary"
@@ -218,14 +235,14 @@ function Contant (props) {
                                 aria-labelledby="pills-Award-tab">
                                 <ul className="text-start ps-0">
                                     <li><a href="/#">
-                                            <span>Best Undergraduate Research Presentation Award.</span></a> 
+                                            <span>Best Undergraduate Research Presentation Award.</span></a>
                                             Annual Statistical Society of Canada Student Conference, “Research: Comparing Dif erent Missing Data Methods.” (May 2016)
                                     </li>
                                     <li><a href="/#">
                                         <span>University College Special In-Course Scholarship, University of Toronto</span></a>
                                         Received for high academic performance for the 2013-2014 academic year.(April 2014)
                                     </li>
-                                   
+
                                     {/* <!--
                                 <li><a href="/#">Awards.com
                                         <span>- Winner</span></a> 2019 - 2020
@@ -255,8 +272,8 @@ function Contant (props) {
                                                         <a href="/#">
                                                             <span>Team Leader, Won 1st Prize for the Case Study Competition: “What Predicts Sustainability of Canadian Charities?”
                                                             </span>
-                                                        </a> 
-                                                        Issued by Statistical Society of Canada -June 2016                                                        
+                                                        </a>
+                                                        Issued by Statistical Society of Canada -June 2016
                                                     </li>
                                                     <li>
                                                         <a href="/#">
@@ -267,11 +284,11 @@ function Contant (props) {
                                                     </li>
                                                     <li>
                                                         <a href="/#">
-                                                            <span> 
+                                                            <span>
                                                                 University College Special In-Course Scholarship
                                                             </span>
-                                                        </a> 
-                                                        Issued by University of Toronto - Apr 2014                                                         
+                                                        </a>
+                                                        Issued by University of Toronto - Apr 2014
                                                     </li>
                                                 </ul>
                                             </div>
@@ -297,7 +314,7 @@ function Contant (props) {
                                             Study<span> -
                                                 University of Toronto
                                             </span></a> Feb 2018 - Feb 2020
-                                    </li>                                    
+                                    </li>
                                 </ul>
                                 {/* <!-- Button trigger modal --> */}
 
@@ -317,8 +334,8 @@ function Contant (props) {
                                                 <li>
                                                     <a href="/#">
                                                         <span>Data Scientist, Cybersecurity & Cyber Fraud </span>
-                                                    </a> 
-                                                    TD Bank, Toronto (Sept 2022 - present)                                            
+                                                    </a>
+                                                    TD Bank, Toronto (Sept 2022 - present)
                                                 </li>
                                                 <li>
                                                     <a href="/#">
@@ -328,11 +345,11 @@ function Contant (props) {
                                                 </li>
                                                 <li>
                                                     <a href="/#">
-                                                        <span> 
-                                                            Machine Learning, Data Science, and Statistics 
+                                                        <span>
+                                                            Machine Learning, Data Science, and Statistics
                                                         </span>
-                                                    </a> 
-                                                    Private Instructor, Toronto (Sept 2014 – Aug 2018)                                                        
+                                                    </a>
+                                                    Private Instructor, Toronto (Sept 2014 – Aug 2018)
                                                 </li>
                                                 <li>
                                                     <a href="/#">
@@ -346,7 +363,7 @@ function Contant (props) {
                                                     </a>
                                                     University of Toronto, Statistical Sciences Department (Sept 2016 – May 2017)
                                                 </li>
-                                            </ul>                                        
+                                            </ul>
                                         </div>
                                         <div className="modal-footer">
                                           <button className="modal-btn" data-bs-target="#experianceToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
@@ -366,8 +383,8 @@ function Contant (props) {
                                                 <li>
                                                     <a href="/#">
                                                         <span>The Hospital for Sick Children (SickKids), Toronto </span>
-                                                    </a> 
-                                                    Big Data Genetics Researcher, Practicum Student (Feb 2018 – May 2019)                                            
+                                                    </a>
+                                                    Big Data Genetics Researcher, Practicum Student (Feb 2018 – May 2019)
                                                 </li>
                                                 <li>
                                                     <a href="/#">
@@ -377,12 +394,12 @@ function Contant (props) {
                                                 </li>
                                                 <li>
                                                     <a href="/#">
-                                                        <span> 
+                                                        <span>
                                                             Toronto General Hospital, Toronto </span>
-                                                    </a> 
-                                                    Lead Statistical Researcher, WE-Can program at ELLICSR (Cancer Survivorship Centre) (June 2015 – Feb 2017)                                                        
+                                                    </a>
+                                                    Lead Statistical Researcher, WE-Can program at ELLICSR (Cancer Survivorship Centre) (June 2015 – Feb 2017)
                                                 </li>
-                                            </ul>            
+                                            </ul>
                                         </div>
                                         <div className="modal-footer">
                                           <button className="modal-btn" data-bs-target="#Experiance" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
@@ -403,8 +420,8 @@ function Contant (props) {
                                                 <li>
                                                     <a href="/#">
                                                         <span>Member of the Sciences Curriculum Committee (Elected Position) </span>
-                                                    </a> 
-                                                    Faculty of Arts & Science, University of Toronto (Sept 2015 – May 2016)                                            
+                                                    </a>
+                                                    Faculty of Arts & Science, University of Toronto (Sept 2015 – May 2016)
                                                 </li>
                                                 <li>
                                                     <a href="/#">
@@ -415,10 +432,10 @@ function Contant (props) {
                                                 <li>
                                                     <a href="/#">
                                                         <span> Vice President </span>
-                                                    </a> 
-                                                    Statistical Sciences Association of Students (formerly UT-Stats Club) 2013 – 2014                                                        
+                                                    </a>
+                                                    Statistical Sciences Association of Students (formerly UT-Stats Club) 2013 – 2014
                                                 </li>
-                                            </ul>            
+                                            </ul>
                                         </div>
                                         <div className="modal-footer">
                                           <button className="modal-btn" data-bs-target="#experianceToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Back to Second</button>
@@ -435,7 +452,7 @@ function Contant (props) {
                                     <li>
                                         <a href="/#">
                                             <span>
-                                                Master of Science - MS, Biostatistics with Concentration in Machine Learning in Healthcare                                               
+                                                Master of Science - MS, Biostatistics with Concentration in Machine Learning in Healthcare
                                             </span></a> Dalla Lana School of Public Health, University of Toronto<br/>
                                             2016-2021
                                     </li>
@@ -445,10 +462,10 @@ function Contant (props) {
                                                 Honor's Bachelors of Science, Mathematics and Statistics
                                                 Institute
                                             </span>
-                                        </a> 
+                                        </a>
                                         University of Toronto Department of Statistical Sciences<br/>
                                         2008-2016
-                                    </li>                                    
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -458,12 +475,272 @@ function Contant (props) {
             </div>
         </div>
     </section>
-   
+
+    {/* <!-- Services section --> */}
+    <section id="services" className="services_wrapper">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12 text-center mb-4">
+                    <h2>Services</h2>
+                    <p>Specialized in statistical consulting, data science consulting, automation consulting and AI consulting to help professionals build artificial intelligence based systems.
+                    </p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="card">
+                        <div className="card-body text-md-start text-center">
+                            <img src={service1} alt="service" className="img-fluid mb-4"/>
+                            <h3>AI Consulting</h3>
+                            <p>I use data science to design intelligent systems and automation technologies that drive productivity, efficiency and revenue.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="card">
+                        <div className="card-body text-md-start text-center">
+                            <img src={service2} alt="service" className="img-fluid mb-4"/>
+                            <h3>Business Consulting
+                            </h3>
+                            <p>I use data science to design intelligent systems and automation technologies that drive productivity, efficiency and revenue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="card">
+                        <div className="card-body text-md-start text-center">
+                            <img src={service3} alt="service" className="img-fluid mb-4"/>
+                            <h3>Financial Consulting</h3>
+                            <p>I use data science to design intelligent systems and automation technologies that drive productivity, efficiency and revenue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- Services section end --> */}
+
+
+    {/* <!-- Portfolio Sectrion --> */}
+    <section id="portfolio"  className="portfolio_wrapper mb-5">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12 text-center mb-4">
+                    <h2>My Latest Projects</h2>
+                    <p>Explore my diverse portfolio showcasing innovative and impactful projects<br className="d-none d-md-block"/>
+                        that demonstrate my skills and passion for problem-solving.</p>
+                </div>
+            </div>
+        </div>
+
+        <div className="container-xl">
+            <div className="row">
+                <div className="col-lg-10 mx-auto">
+                    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                        {/* <!-- Carousel indicators --> */}
+                        <ol className="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="7"></li>
+                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                        </ol>
+                        {/* <!-- Wrapper for carousel items --> */}
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img alt='' src={p1} className="w-100"/>
+                                <h6>FDA Dashboard - TimeTrends</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p2} className="w-100"/>
+                                <h6>FDA - Citations</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p3} className="w-100"/>
+                                <h6>FDA - Classifications</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p4} className="w-100"/>
+                                <h6>Financial Vulnerability</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p6} className="w-100"/>
+                                <h6>Monetary Base to GDP</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p7} className="w-100"/>
+                                <h6>Gen: Gov Gross Debt to GDP</h6>
+                            </div>
+                            <div className="carousel-item">
+                                <img alt='' src={p9} className="w-100"/>
+                                <h6>Border Financial Assets to Liabilities</h6>
+                            </div>
+                        </div>
+                        {/* <!-- Carousel controls --> */}
+                        <a className="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i className="fa fa-angle-left"></i>
+                        </a>
+                        <a className="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i className="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- Portfolio Sectrion end -->  */}
+
+
+    {/* <!-- Poem Sectrion -->  */}
+    <section id="poem" className="poem_wrapper">
+        <div className="container">
+            <h2 className="text-center">Poems</h2>
+            <p  className="text-center">Explore my diverse portfolio showcasing innovative and impactful Projects</p>
+            <div className="row pt-5 text-center">
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <div className="p_poem bg-light p-1 text-center h-100">
+                        <img alt='' src={poem1} className="w-100 rounded-top"/>
+                        <h3 className="text-dark pt-3">The Screaming Earth</h3>
+                        <p className="">Rub my face with dirt</p><br/>
+                        <p className="">Author: Faizan Khalid Mohsin</p><br/>
+                        <div className="p_button px-2 pb-2">
+                            <a className="modal-btn-poem text-dark w-50" href="poem.html">Read</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <div className="p_poem bg-light p-1 text-center h-100">
+                        <img alt='' src={poem2} className="w-100 rounded-top"/>
+                        <h3 className="text-dark px-4 pt-3">What You Are Seeking</h3>
+                        <p className="px-4">| have come from the beyond</p>
+                        <p className="px-4 pt-3">Author: Faizan Khalid Mohsin</p><br/>
+                        <div className="p_button px-2 pb-2">
+                            <a className="modal-btn-poem text-dark w-50" href="poem.html">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <div className="p_poem bg-light p-1 text-center h-100">
+                        <img alt='' src={poem1} className="w-100 rounded-top"/>
+                        <h3 className="text-dark px-4 pt-3">Hidden in Silence</h3>
+                        <p className="px-4">Many secrets are hidden within silence</p>
+                        <p className="px-4 pt-3">Author: Faizan Khalid Mohsin</p><br/>
+                        <div className="p_button px-2 pb-2">
+                            <a className="modal-btn-poem text-dark w-50" href="poem.html">Read</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className="p_view px-2 pt-5 pb-2 text-center">
+                <a className="modal-btn-poem w-25" href="poem.html">Veiw All</a>
+            </div>
+
+        </div>
+    </section>
+    {/* <!-- Poem Sectrion end -->  */}
+
+    {/* <!-- Video Sectrion --> */}
+    <section className="y-video" id="videos">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12 text-center mb-4">
+                    <h2 >My Latest Videos</h2>
+                    <p>Explore my diverse portfolio showcasing innovative and impactful projects<br className="d-none d-md-block"/>
+                        that demonstrate my skills and passion for problem-solving.</p>
+                </div>
+            </div>
+        </div>
+        <div className="container">
+            <div className="row pt-5">
+                <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-5">
+                    <div className="video1">
+                        <iframe  height="220" className="w-100"  src="https://www.youtube.com/embed/OhlseVdSBbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-5">
+                    <div className="video1">
+                        <iframe height="220" className="w-100" src="https://www.youtube.com/embed/zROqGeFw0DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-5">
+                    <div className="video1">
+                        <iframe height="220" className="w-100"  src="https://www.youtube.com/embed/DUbVIodWcHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- Video Sectrion end --> */}
+
+    {/* <!-- Blog Sectrion -->  */}
+    <section id="poem" className="blog_section">
+        <div className="container">
+            <h2 className="text-center">Blogs</h2>
+            <p  className="text-center">Explore my diverse portfolio showcasing innovative and impactful Projects</p>
+            <div className="row pt-4">
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <a href="blogs.html">
+                        <div className="categories_blog">
+                            <img alt='' src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/03/git-1.png" 
+                            className="w-100" height="300"/>
+                            <div className="blog-text">
+                                <p>Git & GitHub</p>
+                                <p className="h5 fw-bolder" style={{margin:`-15px 0px -1px;`}}>Share views and connect with an audience.</p>
+                                <p>Blogs provide many writers</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <a href="blogs.html">
+                        <div className="categories_blog">
+                            <img alt='' src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg?crop=4:3" 
+                            className="w-100" height="300"/>
+                            <div className="blog-text">
+                                <p>Python</p>
+                                <p className="h5 fw-bolder" style={{margin:`-15px 0px -1px;`}}>Share views and connect with an audience.</p>
+                                <p>Blogs provide many writers</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-3">
+                    <a href="blogs.html">
+                        <div className="categories_blog">
+                            <img alt='' src="https://miro.medium.com/max/990/0*l9-9V7yetcbz-YKC.jpg" 
+                            className="w-100" height="300"/>
+                            <div className="blog-text">
+                                <p>R language</p>
+                                <p className="h5 fw-bolder" style={{margin:`-15px 0px -1px;`}}>Share views and connect with an audience.</p>
+                                <p>Blogs provide many writers</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div className="p_view px-2 pt-5 pb-2 text-center">              
+                <a className="modal-btn-poem w-25" href="blogs.html">Veiw All</a>
+            </div>
+
+        </div>
+    </section>
+    {/* <!-- Blog Sectrion end --> */}
+
+
       </>
-      
+
     );
   }
-  
+
   export default Contant;
-  
-  
+

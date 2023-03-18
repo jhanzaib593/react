@@ -4,6 +4,7 @@ import Navbar from  './Navbar.js'
 import Contant from './Contant.js';
 import Blog from './Blog.js'
 import {BrowserRouter , Route, Routes } from 'react-router-dom';
+import Footer from './Footer.js';
 
 function App() {
   const [mode, setMode] = useState ('bg-dark-blue');
@@ -32,9 +33,12 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Contant mode={mode} toggleMode={toggleMode}/>}></Route>
-          <Route path='/Blogs' element={<Blog/>}></Route>
+          <Route path='/Blogs' exact element={<Blog/>}></Route>
+          
       </Routes>
       </BrowserRouter>
+
+      <Footer/>
     </>
   );
 }

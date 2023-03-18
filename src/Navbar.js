@@ -32,7 +32,7 @@ function Navbar(props) {
                             <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="#videos">Videos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href ="/Blogs">Blogs</a>
+                           <a className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="/Blogs">Blogs</a>
                         </li>
                         <li className="nav-item mt-3 mt-lg-0">
                             <a  href="/">
@@ -51,6 +51,37 @@ function Navbar(props) {
             </div>
         </nav>
     </header>
+
+
+    
+    {/* <!-- Offcanvas Sidebar -->     */}
+      
+    <div className="offcanvas offcanvas-end" id="Contact" data-bs-scroll="true" tabindex="-1" IdComponent="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvas-Label">Contact Us</h5>
+            <button type="button" className="btn-close text-reset" id="offcanvas-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div className="offcanvas-body pt-5 px-3">
+              <form>
+                  <div className="mb-3">
+                    <label for="name" className="form-label text-white">Name</label>
+                    <input type="text" className="form-control" id="name" placeholder="Enter your name"/>
+                  </div>
+                  <div className="mb-3">
+                    <label for="email" className="form-label text-white">Email address</label>
+                    <input type="email" className="form-control" id="email" placeholder="Enter your email"/>
+                  </div>
+                  <div className="mb-3">
+                    <label for="message" className="form-label text-white">Message</label>
+                    <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-light" id="submit-btn">Send</button>
+                </form>
+          </div>
+        </div>
+    
+      {/* <!-- Contact form Section end -->  */}
+
       </>
       
     );
