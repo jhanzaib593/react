@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import './App.css';
-import Navbar from  './Navbar.js'
-import Contant from './Contant.js';
-import Blog from './Blog.js'
 import {BrowserRouter , Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from  './Navbar.js';
+import Contant from './Contant.js';
+import Blog from './Blog.js';
 import Footer from './Footer.js';
+import Poem from './components/Poem';
+import Gallery from './components/Gallery';
+
 
 function App() {
   const [mode, setMode] = useState ('bg-dark-blue');
@@ -20,25 +23,17 @@ function App() {
   }
   return (
     <>
-    {/* <Route>
-      <Routes>
-          <Route path="/" element={<Navbar mode={mode} toggleMode={toggleMode}/>} />
-          <Route path="/" element={<Contant/>} />
-          <Route path="/" element={<About mode={mode} toggleMode={toggleMode}/>} />
-      </Routes>
-    </Route> */}
-    <Navbar mode={mode} toggleMode={toggleMode}/>
-    {/* <Contant/>
-    <About mode={mode} toggleMode={toggleMode}/> */}
     <BrowserRouter>
+        <Navbar mode={mode} toggleMode={toggleMode}/>
         <Routes>
           <Route path='/' element={<Contant mode={mode} toggleMode={toggleMode}/>}></Route>
           <Route path='/Blogs' exact element={<Blog/>}></Route>
-          
-      </Routes>
-      </BrowserRouter>
-
+          <Route path='/Poem' exact element={<Poem/>}></Route>
+          <Route path='/Gallery' exact element={<Gallery/>}></Route>
+        </Routes>
       <Footer/>
+    </BrowserRouter>
+
     </>
   );
 }

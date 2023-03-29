@@ -1,8 +1,24 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+const $ = window.$;
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 20) {
+          $(".navbar").css("background" , "#091020");
+        }
+  
+        else{
+            $(".navbar").css("background" , "transparent");  	
+        }
+    })
+  })
+
 function Navbar(props) {
     return (
+  
       <>
-     
      <header className="header_wrapper" style={{backgroundColor:props.mode==='light'?'gray':'#c6c9d8bf'}}>
         <nav className={`navbar navbar-expand-lg fixed-top bg-${props.mode}`}>
             <div className="container d-flex justify-content-end">
@@ -14,10 +30,10 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav menu-navbar-nav ">
                         <li className="nav-item">
-                            <a className="nav-link active" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} aria-current="page" href="/">Home</a>
+                            <Link className="nav-link active" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#about">About</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="/#about">About</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#services">Services</a>
@@ -26,16 +42,20 @@ function Navbar(props) {
                             <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}}href="#portfolio">Portfolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="poem.html">Poems</a>
+                            <Link className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} to="/Poem">Poems</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="#videos">Videos</a>
+                            <a className="nav-link"  style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="/#videos">Videos</a>
                         </li>
                         <li className="nav-item">
-                           <a className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} href="/Blogs">Blogs</a>
+                           <Link className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} to="/Blogs">Blogs</Link>
                         </li>
+                        <li className="nav-item">
+                           <Link className="nav-link" style={{color:props.mode==='light'?'black':'#c6c9d8bf'}} to="/Gallery">Gallery</Link>
+                        </li>
+                        
                         <li className="nav-item mt-3 mt-lg-0">
-                            <a  href="/">
+                            <a href='/#'>
                                 <button className="main-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#Contact">Contact</button>  
                             </a>
                         </li>
